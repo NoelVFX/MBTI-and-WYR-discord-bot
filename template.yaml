@@ -20,10 +20,10 @@ Resources:
         - x86_64
       Environment:
         Variables:
-          DISCORD_PUBLIC_KEY: '0c8d54f7ba8231fce67d28fb3a0ae638bbd3694004b901417c4029a1aaddc581'
-          DISCORD_APPLICATION_ID: '1253240809310916678'
-          DISCORD_BOT_TOKEN: 'MTI1MzI0MDgwOTMxMDkxNjY3OA.GsgsK3.4JUtBi793-qRMjc01dPGcBR37SknmkFVRkNBEA'
-          DYNAMODB_TABLE_NAME: 'DiscordBotMessage'
+          DISCORD_PUBLIC_KEY: your_public_key
+          DISCORD_APPLICATION_ID: your_application_ID
+          DISCORD_BOT_TOKEN: your_bot_token
+          DYNAMODB_TABLE_NAME: your_table_name
       Events:
         HelloWorld:
           Type: Api
