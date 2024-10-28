@@ -1,0 +1,62 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  python3.10
+  Sample SAM Template for Discordproject
+
+Globals:
+  Function:
+    Timeout: 900
+    LoggingConfig:
+      LogFormat: JSON
+
+Resources:
+  HelloWorldFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      PackageType: Image
+      ImageUri: 110399421952.dkr.ecr.us-east-1.amazonaws.com/mootiez59addeb3/helloworldfunction19d43fc4repo:helloworldfunction-7def96058480-python3.10-v1  # Add this line
+      Architectures:
+        - x86_64
+      Environment:
+        Variables:
+          DISCORD_PUBLIC_KEY: '0c8d54f7ba8231fce67d28fb3a0ae638bbd3694004b901417c4029a1aaddc581'
+          DISCORD_APPLICATION_ID: '1253240809310916678'
+          DISCORD_BOT_TOKEN: 'MTI1MzI0MDgwOTMxMDkxNjY3OA.GsgsK3.4JUtBi793-qRMjc01dPGcBR37SknmkFVRkNBEA'
+          DYNAMODB_TABLE_NAME: 'DiscordBotMessage'
+      Events:
+        HelloWorld:
+          Type: Api
+          Properties:
+            Path: /hello
+            Method: post
+    Metadata:
+      Dockerfile: Dockerfile
+      DockerContext: ./hello_world
+      DockerTag: python3.10-v1
+
+  ApplicationResourceGroup:
+    Type: AWS::ResourceGroups::Group
+    Properties:
+      Name:
+        Fn::Sub: ApplicationInsights-SAM-${AWS::StackName}
+      ResourceQuery:
+        Type: CLOUDFORMATION_STACK_1_0
+
+  ApplicationInsightsMonitoring:
+    Type: AWS::ApplicationInsights::Application
+    Properties:
+      ResourceGroupName:
+        Ref: ApplicationResourceGroup
+      AutoConfigurationEnabled: 'true'
+
+Outputs:
+  HelloWorldApi:
+    Description: API Gateway endpoint URL for Prod stage for Hello World function
+    Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/hello/"
+  HelloWorldFunction:
+    Description: Hello World Lambda Function ARN
+    Value: !GetAtt HelloWorldFunction.Arn
+  HelloWorldFunctionIamRole:
+    Description: Implicit IAM Role created for Hello World function
+    Value: !GetAtt HelloWorldFunction.Arn

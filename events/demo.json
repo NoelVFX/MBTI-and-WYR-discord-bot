@@ -1,0 +1,118 @@
+{
+    "resource": "/hello",
+    "path": "/hello",
+    "httpMethod": "POST",
+    "headers": {
+        "CloudFront-Forwarded-Proto": "https",
+        "CloudFront-Is-Desktop-Viewer": "true",
+        "CloudFront-Is-Mobile-Viewer": "false",
+        "CloudFront-Is-SmartTV-Viewer": "false",
+        "CloudFront-Is-Tablet-Viewer": "false",
+        "CloudFront-Viewer-ASN": "396982",
+        "CloudFront-Viewer-Country": "US",
+        "content-type": "application/json",
+        "Host": "2s501xbhy5.execute-api.us-east-1.amazonaws.com",
+        "User-Agent": "Discord-Interactions/1.0 (+https://discord.com)",
+        "Via": "1.1 ce717f0b4c986e0f08b86835ca2dcb12.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Id": "cgwSfsz41BZ_IDXnybKozL6AujWi-efN1ZgYE_PR5TVfeRpYvPnSJQ==",
+        "X-Amzn-Trace-Id": "Root=1-66949f01-186f72cf0fa3cba0089f8e3a",
+        "X-Forwarded-For": "35.196.132.85, 18.68.3.241",
+        "X-Forwarded-Port": "443",
+        "X-Forwarded-Proto": "https",
+        "x-signature-ed25519": "19a1d0527c8934a31c7cc10c16ec0f3bb365eb95ca709334a2c3280987c925fbff43a67cb41b5768e7c67608d66f8d2eddf847680ebde3a0fd4c1a8faee1c000",
+        "x-signature-timestamp": "1721016065"
+    },
+    "multiValueHeaders": {
+        "CloudFront-Forwarded-Proto": [
+            "https"
+        ],
+        "CloudFront-Is-Desktop-Viewer": [
+            "true"
+        ],
+        "CloudFront-Is-Mobile-Viewer": [
+            "false"
+        ],
+        "CloudFront-Is-SmartTV-Viewer": [
+            "false"
+        ],
+        "CloudFront-Is-Tablet-Viewer": [
+            "false"
+        ],
+        "CloudFront-Viewer-ASN": [
+            "396982"
+        ],
+        "CloudFront-Viewer-Country": [
+            "US"
+        ],
+        "content-type": [
+            "application/json"
+        ],
+        "Host": [
+            "2s501xbhy5.execute-api.us-east-1.amazonaws.com"
+        ],
+        "User-Agent": [
+            "Discord-Interactions/1.0 (+https://discord.com)"
+        ],
+        "Via": [
+            "1.1 ce717f0b4c986e0f08b86835ca2dcb12.cloudfront.net (CloudFront)"
+        ],
+        "X-Amz-Cf-Id": [
+            "cgwSfsz41BZ_IDXnybKozL6AujWi-efN1ZgYE_PR5TVfeRpYvPnSJQ=="
+        ],
+        "X-Amzn-Trace-Id": [
+            "Root=1-66949f01-186f72cf0fa3cba0089f8e3a"
+        ],
+        "X-Forwarded-For": [
+            "35.196.132.85, 18.68.3.241"
+        ],
+        "X-Forwarded-Port": [
+            "443"
+        ],
+        "X-Forwarded-Proto": [
+            "https"
+        ],
+        "x-signature-ed25519": [
+            "19a1d0527c8934a31c7cc10c16ec0f3bb365eb95ca709334a2c3280987c925fbff43a67cb41b5768e7c67608d66f8d2eddf847680ebde3a0fd4c1a8faee1c000"
+        ],
+        "x-signature-timestamp": [
+            "1721016065"
+        ]
+    },
+    "queryStringParameters": null,
+    "multiValueQueryStringParameters": null,
+    "pathParameters": null,
+    "stageVariables": null,
+    "requestContext": {
+        "resourceId": "8mtp5z",
+        "resourcePath": "/hello",
+        "httpMethod": "POST",
+        "extendedRequestId": "a73IWH7joAMEsEQ=",
+        "requestTime": "15/Jul/2024:04:01:05 +0000",
+        "path": "/Prod/hello",
+        "accountId": "110399421952",
+        "protocol": "HTTP/1.1",
+        "stage": "Prod",
+        "domainPrefix": "2s501xbhy5",
+        "requestTimeEpoch": 1721016065935,
+        "requestId": "83e3c065-02fe-4385-bb6e-87b52d144883",
+        "identity": {
+            "cognitoIdentityPoolId": null,
+            "accountId": null,
+            "cognitoIdentityId": null,
+            "caller": null,
+            "sourceIp": "35.196.132.85",
+            "principalOrgId": null,
+            "accessKey": null,
+            "cognitoAuthenticationType": null,
+            "cognitoAuthenticationProvider": null,
+            "userArn": null,
+            "userAgent": "Discord-Interactions/1.0 (+https://discord.com)",
+            "user": null
+        },
+        "domainName": "2s501xbhy5.execute-api.us-east-1.amazonaws.com",
+        "deploymentId": "xi9j3v",
+        "apiId": "2s501xbhy5"
+    },
+    "body": "eyJhcHBfcGVybWlzc2lvbnMiOiI1NjI5NDk5NTM2MDE1MzYiLCJhcHBsaWNhdGlvbl9pZCI6IjEyNTMyNDA4MDkzMTA5MTY2NzgiLCJhdXRob3JpemluZ19pbnRlZ3JhdGlvbl9vd25lcnMiOnt9LCJlbnRpdGxlbWVudHMiOltdLCJpZCI6IjEyNjIyNTc2MTAwMTEzMTIxMjkiLCJ0b2tlbiI6ImFXNTBaWEpoWTNScGIyNDZNVEkyTWpJMU56WXhNREF4TVRNeE1qRXlPVHBIZVVSQ1RVVk5NbWxwUlVWNVIzSlBZbkk0T1hoc2VUa3dXalpQZUc5WFZVVklVV05EUTBGT05qWm9RVFpLWW1vNVZVWnhZamxwZFRSblZUSkdORU55Um5acFV6Uk1lVkU0WkhOVVlVRnlUemxOU2xGcE1YbHdZM1E0VDJGRFRGQlJZVUZrYUZVNE1YQTNjVFJ5WTFocU1qRk1aMUJ3ZDBZMGNtWlFaVEpCV1EiLCJ0eXBlIjoxLCJ1c2VyIjp7ImF2YXRhciI6ImM2YTI0OTY0NWQ0NjIwOWYzMzcyNzljZDJjYTk5OGM3IiwiYXZhdGFyX2RlY29yYXRpb25fZGF0YSI6bnVsbCwiYm90Ijp0cnVlLCJjbGFuIjpudWxsLCJkaXNjcmltaW5hdG9yIjoiMDAwMCIsImdsb2JhbF9uYW1lIjoiRGlzY29yZCIsImlkIjoiNjQzOTQ1MjY0ODY4MDk4MDQ5IiwicHVibGljX2ZsYWdzIjoxLCJzeXN0ZW0iOnRydWUsInVzZXJuYW1lIjoiZGlzY29yZCJ9LCJ2ZXJzaW9uIjoxfQ==",
+    "isBase64Encoded": true
+}

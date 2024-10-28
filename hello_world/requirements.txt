@@ -1,0 +1,9 @@
+requests
+discord.py
+boto3
+pynacl
+discord.py
+discord-interactions
+discord-py-slash-command
+discord-ui
+aiohttp
